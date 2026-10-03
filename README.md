@@ -11,6 +11,14 @@ for two sticks and tuned to my personal preferences.
 - **Star Citizen version:** 4.10.0 LIVE (profile `KJ_410_LIVE_LAERO_RAERO`)
 - **Joystick Gremlin profile version:** 9
 
+## View the bindings
+
+These bindings can be viewed as interactive HOTAS charts in my **SC Binding Board** tool, which
+renders a Star Citizen `actionmaps.xml` alongside its Joystick Gremlin profile:
+
+- **Live tool:** https://jurgenkobierczynski.com/sc-binding-board/index.html
+- **Source:** https://github.com/jkobierczynski/sc-binding-board
+
 ## How it works (two-layer setup)
 
 Star Citizen never sees the physical VIRPIL devices directly. The chain is:
@@ -29,10 +37,6 @@ Both files are therefore required, and they must stay in sync.
 | Left VPC CDT-AEROMAX (LAERO) | vJoy 1 | `js1` | Throttle-hand / left-side controls (85 binds) |
 | Right VPC CDT-AEROMAX (RAERO) | vJoy 2 | `js2` | Stick-hand / targeting & combat (93 binds) |
 | Keyboard | — | `kb1` | Doors, camera, VoIP, eye-tracking (29 binds) |
-
-> **Note:** The old **VMAX Throttle** device entry is still present in the Joystick Gremlin
-> profile but has **no bindings** (it feeds nothing). It's a harmless leftover from the previous
-> config and can be deleted from the profile when convenient.
 
 ## Requirements
 
