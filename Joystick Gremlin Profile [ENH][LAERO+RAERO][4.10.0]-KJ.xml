@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+﻿<?xml version="1.0" ?>
 <profile version="9">
     <devices>
         <device device-guid="{0D49E940-B401-11F0-8003-444553540000}" label="" name="RIGHT VPC CDT-AEROMAX" type="joystick">
