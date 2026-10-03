@@ -63,8 +63,9 @@ Credits: Joystick Gremlin by WhiteMagic, HidHide by Nefarius, base bindings by S
 ## Modes (overlays)
 
 Mode switching lives on the **left stick (LAERO)**, buttons 21 & 22 (tempo: short vs long press),
-cycling between **SCM**, **NAV**, and **Aux** modes, with voice callouts. A **Modifier** overlay is
+switching between **SCM** and **NAV** modes with voice callouts. A **Modifier** overlay is
 held via LAERO button 3 (and RAERO buttons 3 / 5), exposing a second layer of vJoy buttons.
+Master-mode changes themselves are handled in-game, so SCM is the working mode in practice.
 
 ## Missile / Gun mode via the flip trigger
 
@@ -87,19 +88,10 @@ with a modifier layer for the multi-tap "cycle all" variants.
 ### Movement & modes
 - Switched **Y** and **Z** axes (Yaw ↔ Roll)
 - Unbound **v_lock_rotation** from Right Shift
-- Mode switching (SCM/NAV/Aux) handled on the **left stick** rather than overlays on individual buttons
+- Mode switching (SCM/NAV) handled on the **left stick** rather than overlays on individual buttons
+- Removed the unused **Aux** mode from the Joystick Gremlin profile (left stick now cycles SCM ↔ NAV only)
 
-### Position moves (personal layout)
-
-| Function | Now on (former position) | Notes |
-|---|---|---|
-| **Brake** | Auxiliary Mode Cycle | |
-| **Auxiliary Mode Cycle** | Decoy | |
-| **Operator Mode Cycle Forward** | Decoy | *(confirm vs. Aux Mode Cycle — see below)* |
-| **Decoy** / **Noise** | Decouple | + modifier button |
-| **Decouple** | VTOL Cycle | |
-| **VTOL Cycle** | Open Door Toggle | Door buttons removed from stick |
-
+### Flight & ship controls
 - Changed **Capacitor Reset** and **Engineering Assignment Reset** to no longer require a modifier
 - **Eject** is intentionally **unbound** (left blank) to prevent accidental ejection
 
@@ -113,9 +105,3 @@ with a modifier layer for the multi-tap "cycle all" variants.
 - **=** (equals) → toggle Tobii eye tracking
 - Doors on keyboard: **LShift+D** close, **RShift+D** open, **LShift+L** lock, **RShift+L** unlock
   (door lock/unlock removed from stick buttons)
-
----
-
-*Setup note I haven't resolved: in the position-moves table, **Operator Mode Cycle Forward** and
-**Auxiliary Mode Cycle** both read as "former Decoy position." If one sits on a modifier layer,
-I should note which; otherwise it's a collision to fix.*
